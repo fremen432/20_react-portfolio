@@ -33,7 +33,7 @@ feather.replace()
         </nav>
       </header>
 
-      < AboutMe />
+      {/* < AboutMe /> */}
       {/* About Me */}
       <div id="about-me" class="section-container flex-around ">
           <h2 class="section-title">About Me </h2>
