@@ -1,6 +1,6 @@
 import React from "react";
-import { useState } from "react";
-import ReactDom from "react-dom";
+// import { useState } from "react";
+// import ReactDom from "react-dom";
 
 import Header from './components/Header';
 import AboutMe from "./components/AboutMe";
@@ -24,6 +24,8 @@ feather.replace()
         <Projects></Projects>
         <ContactMe></ContactMe>
         <Footer></Footer>
+        {/* <img class="projectCard" src="../src/Assets/projectCard-Images/eazy-eatz.png" alt="" /> */}
+
       </>
   )
 }

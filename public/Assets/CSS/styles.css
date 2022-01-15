@@ -20,7 +20,7 @@
 
 }
 
-/* .box { border: 1px solid black; } */
+.box { border: 1px solid black; }
 
 /* RANDOM STYLES START */
 
@@ -203,6 +203,16 @@ a {
 #eCommerce-backEnd  { background-image: url(../Images/projectCard-Images/e-commerce-back-end.jpeg); background-position: center; }
 #Full-Stack-Website { background-image: url(../Images/projectCard-Images/armadillo-materials.png); }
 #team-profile-generator { background-image: url(../Images/projectCard-Images/team-profile-generator.png); }
+
+
+#email-icon     { background-image: url(../Images/white-icons/email/other-mail.jpeg); }
+#github-icon    { background-image: url(../Images/white-icons/github/github1.png); }
+#linkedin-icon  { background-image: url(../Images/white-icons/linkedin/linkedin1.png); }
+
+.icon {
+    height: 20px;
+    width: 20px;
+}
 
 /* Start Contact Me */
 .contact-li { margin-left: 15px; }
