@@ -1,5 +1,5 @@
 import React from "react";
-// import coverImage from '../Assets/profile-pic.jpg'
+import coverImage from '../Assets/profile-pic.jpg'
 function Projects() {
     return (
         <div id="#projects" class="section-container flex-around">
@@ -49,7 +49,7 @@ function Projects() {
                         <h4>Command Line Application</h4>
                     </div>
                 </a>
-
+                
             </article>
 
         </div>

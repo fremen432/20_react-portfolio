@@ -20,7 +20,7 @@
 
 }
 
-.box { border: 1px solid black; }
+/* .box { border: 1px solid black; } */
 
 /* RANDOM STYLES START */
 
@@ -149,6 +149,24 @@ a {
     background-position: center;
 }
 
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    /* background-image: url("../Images/lake.jpg"); */
+    background-color: var(--main);
+
+    background-size: cover;
+    background-position: center;
+
+    height: 50px;
+
+    color: var(--white-text);
+
+}
+
 /* Work section Start */
 .grid {
     display: grid;
@@ -205,11 +223,11 @@ a {
 #team-profile-generator { background-image: url(../Images/projectCard-Images/team-profile-generator.png); }
 
 
-#email-icon     { background-image: url(../Images/white-icons/email/other-mail.jpeg); }
+#email-icon     { background-image: url(../Images/555-phone-number.jpg); }
 #github-icon    { background-image: url(../Images/white-icons/github/github1.png); }
 #linkedin-icon  { background-image: url(../Images/white-icons/linkedin/linkedin1.png); }
 
-.icon {
+.footer-icon {
     height: 20px;
     width: 20px;
 }
@@ -224,6 +242,7 @@ a {
 }
 footer {
     height: 50px;
+    /* background-color: var(--main); */
     background-color: var(--main);
 }
 footer nav { width: 100%; }

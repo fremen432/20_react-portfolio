@@ -8,14 +8,7 @@ import Projects from "./components/Projects";
 import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
 
-const feather = require('feather-icons')
-
 function App() {
-feather.replace()
-
-//   function handleAboutme(e) {
-
-//   }
 
   return (
     <>
@@ -24,7 +17,6 @@ feather.replace()
         <Projects></Projects>
         <ContactMe></ContactMe>
         <Footer></Footer>
-        {/* <img class="projectCard" src="../src/Assets/projectCard-Images/eazy-eatz.png" alt="" /> */}
 
       </>
   )
