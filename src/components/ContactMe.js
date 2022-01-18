@@ -6,47 +6,35 @@ function ContactMe() {
         <h2 class="section-title">Contact Me</h2>
 
             <div class="content-container box" >
-                <div class="">
-                    <h1>CONTACT ME! </h1>
-                    <h3>Fill out the form below to learn more!</h3>
+
+                <div class="container">
+                    <form action="https://formspree.io/f/xknyozbk" method="POST" id="my-form">
+
+                    <div class="form-group">
+                        <label for="firstName"> First Name</label>
+                        <input type="text" id="firstName" name="firstName" required/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="latsName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="massage">Message</label>
+                        <textarea name="massage" id="massage" cols="30" rows="10" required></textarea>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                    </form>
                 </div>
-                <div class="">
-                    <form action="">
-                        <ul>
-                            
-                            <li>
-                                <p class="left">
-                                    <label for="first_name">first name</label>
-                                    <input type="text" name="first_name" placeholder="John" />
-                                </p>
-                                <p class="pull-right">
-                                    <label for="last_name">last name</label>
-                                    <input type="text" name="last_name" placeholder="Smith" />      
-                                </p>
-                            </li>
-                            
-                            <li>
-                                <p>
-                                    <label for="email">email <span class="req">*</span></label>
-                                    <input type="email" name="email" placeholder="john.smith@gmail.com" />
-                                </p>
-                            </li>        
-                            <li>
-                                <div class="divider"></div>
-                            </li>
-                            <li>
-                                <label for="comments">comments</label>
-                                <textarea cols="46" rows="3" name="comments"></textarea>
-                            </li>
-                            
-                            <li>
-                                <input class="btn btn-submit" type="submit" value="Submit" />
-                                <small>or press <strong>enter</strong></small>
-                            </li>
-                            
-                        </ul>
-                    </form>  
-                </div>
+                <div id="status"></div>
+                
             </div>
         </div>
         

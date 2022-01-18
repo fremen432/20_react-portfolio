@@ -8,48 +8,54 @@ function Projects() {
 
             <article class=" content-container grid box ">
 
-                <a id= "Eazy-Eatz" class= "projectCard " href="http://www.claytonmiller.tech/projects/eazy-eatz/" target="_blank" >
-                    <div class="text-box">
-                        <h3>Eazy Eatz</h3>
-                        <h4>Recipe Finder Application</h4>
+                <div id= "Eazy-Eatz" class= "projectCard ">
+                    <p class="colorMain  flex-center projTitle" >Recipe Finder Application</p>
+                    <div class="projectLinks" >
+                        <a className="colorMain flex-center projLink" href="http://www.claytonmiller.tech/projects/eazy-eatz/" target="_blank">Live Page</a>
+                        <a className="colorMain flex-center projLink" href="https://github.com/fremen432/Eazy-Eatz" target="_blank">Repository</a>
                     </div>
-                </a>
+                </div>
 
-                <a id= "Full-Stack-Website" class= "projectCard" href="https://glacial-reef-85694.herokuapp.com/" target="_blank" >
-                    <div class="text-box">
-                        <h3>Armadillo Materials</h3>
-                        <h4>Professional Full-Stack Website</h4>
+                <div id= "Full-Stack-Website" class= "projectCard">
+                    <p class="colorMain flex-center projTitle" >Professional Full-Stack Website</p>
+                    <div class="projectLinks" >
+                        <a className="colorMain flex-center projLink" href="https://glacial-reef-85694.herokuapp.com/" target="_blank">Live Page</a>
+                        <a className="colorMain flex-center projLink" href="https://github.com/MickeyPhillips/Project_2" target="_blank">Repository</a>
                     </div>
-                </a>
+                </div>
 
-                <a id= "passwordGenerator" class= "projectCard" href="http://www.claytonmiller.tech/projects/password-generator/" target="_blank" >
-                    <div class= "text-box">
-                        <h3>Password Generator</h3>
-                        <h4>JavaScript</h4>
+                <div id="passwordGenerator"  class= "projectCard">
+                    <p class="colorMain  flex-center projTitle" >Password Generator</p>
+                    <div class="projectLinks" >
+                        <a className="colorMain flex-center projLink" href="http://www.claytonmiller.tech/projects/password-generator/" target="_blank">Live Page</a>
+                        <a className="colorMain flex-center projLink" href="https://github.com/fremen432/Random-Password-Generator" target="_blank">Repository</a>
                     </div>
-                </a>
+                </div>
 
-                <a id= "workDayScheduler" class= "projectCard" href="http://www.claytonmiller.tech/projects/work-day-scheduler/" target="_blank" >
-                    <div class= "text-box">
-                        <h3>Work Day Scheduler</h3>
-                        <h4>Moment.js</h4>
+                <div id="workDayScheduler"  class= "projectCard">
+                    <p class="colorMain  flex-center projTitle" >Work Day Scheduler</p>
+                    <div class="projectLinks" >
+                        <a className="colorMain flex-center projLink" href="http://www.claytonmiller.tech/projects/work-day-scheduler/" target="_blank">Live Page</a>
+                        <a className="colorMain flex-center projLink" href="https://github.com/fremen432/Work-Day-Scheduler" target="_blank">Repository</a>
                     </div>
-                </a>
+                </div>
 
-                <a id= "eCommerce-backEnd" class= "projectCard" href="https://github.com/fremen432/e-commerce-back-end" target="_blank" >
-                    <div class= "text-box">
-                        <h3>E-Commerce Back-End</h3>
-                        <h4>SQL/Sequalize-ORM</h4>
+                <div id="eCommerce-backEnd"  class= "projectCard">
+                    <p class="colorMain  flex-center projTitle" >E-Commerce Back-End</p>
+                    <div class="projectLinks" >
+                        <a className="colorMain flex-center projLink" href="https://github.com/fremen432/e-commerce-back-end" target="_blank">Live Page</a>
+                        <a className="colorMain flex-center projLink" href="https://github.com/fremen432/e-commerce-back-end" target="_blank">Repository</a>
                     </div>
-                </a>
+                </div>
 
-                <a id= "team-profile-generator" class= "projectCard" href="https://github.com/fremen432/team-profile-generator" target="_blank" >
-                    <div class= "text-box">
-                        <h3>Team Profile Generator</h3>
-                        <h4>Command Line Application</h4>
+                <div id="team-profile-generator"  class= "projectCard">
+                    <p class="colorMain  flex-center projTitle" >Command Line Application</p>
+                    <div class="projectLinks" >
+                        <a className="colorMain flex-center projLink" href="https://www.youtube.com/watch?v=MmCSwY2uNWg" target="_blank">Live Page</a>
+                        <a className="colorMain flex-center projLink" href="https://github.com/fremen432/team-profile-generator" target="_blank">Repository</a>
                     </div>
-                </a>
-                
+                </div>
+
             </article>
 
         </div>

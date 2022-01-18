@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
+import "../Assets/CSS/styles.css";
 
 function Header() {
+    const [style, setStyle] = useState('hide')
+
+    const changeStyle = () => { setStyle('hide2') }
+
+    function works() {
+        alert('This works')
+    }
+
     return (
         <header>
-            <h1>
+            <h1 className={style} >
                 Clayton Miller
             </h1>
             <nav>
                 <ul>
                     <li>
-                        <a href="#about-me">About Me</a>
+                        <a href="#about-me" onClick={setStyle} >About Me</a>
                     </li>
                     <li>
                         <a href="#projects">Projects</a>

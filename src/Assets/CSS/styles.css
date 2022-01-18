@@ -6,8 +6,7 @@
     font-size: 15px;
 
     --main: #2a607c;
-    --main2: #7da4b8;
-    /* --main2: #c7ecff; */
+    --main2: #c7ecff;
     --main3: #193b4d;
     --white-text: white;
 
@@ -17,34 +16,6 @@
     --plant1: #5DAA68;
     --plant2: #3F6844;
     --plant3: #FAF1CF;
-
-
-}
-
-footer {
-    /* (A1) FIXED AT BOTTOM */
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    /* (A2) DIMENSIONS */
-    width: 100%;
-    height: 40px;
-    padding: 0 5px;
-    /* (A3) CENTER TEXT */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
-    
-    /* flex-wrap: wrap; */
-    background-color: var(--main);
-
-    /* height: 50px; */
-
-    color: var(--white-text);
 
 
 }
@@ -111,7 +82,7 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    background-image: url("../Images/lake.jpg");
+    /* background-image: url("../Images/lake.jpg"); */
     background-size: cover;
     background-position: center;
 
@@ -152,7 +123,7 @@ a {
 
 /* Hero */
 .hero {
-    background-image: url("../Images/lake.jpg");
+    /* background-image: url("../Images/lake.jpg"); */
     height: 200px;
     width: 100%;
     margin-bottom: 25px;
@@ -178,6 +149,23 @@ a {
     background-position: center;
 }
 
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    /* background-image: url("../Images/lake.jpg"); */
+    background-color: var(--main);
+
+    background-size: cover;
+    background-position: center;
+
+    height: 50px;
+
+    color: var(--white-text);
+
+}
 
 /* Work section Start */
 .grid {
@@ -185,51 +173,18 @@ a {
     /* grid-template-columns: 50% 50%; */
     grid-template-columns: 25% 25% 25% 25%;
 }
-
 .text-box {
+    display: inline-block;
+    width: fit-content;
+
     background-color: var(--main);
     color: var(--white-text);
+    margin: 0 0 10px 0;
 }
-
-.colorMain {
-    background-color: var(--main);
-    color: var(--white-text);
-
-}
-
-.text-center {
-    text-align: center;
-    
-}
-
-.projectLinks {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.projLink {
-    height: 35px;
-    font-size: 1rem;
-    width: 8rem;
-}
-
-.projTitle {
-    height: 40px;
-    /* font-size: 1.5rem; */
-    /* width: 8rem; */
-
-}
-
-.projLink:hover {
-    background-color: var(--main2);
-    /* color: var(--white-text); */
-}
-
 .projectCard {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
 
     height: 300px;
     /* width: 100%; */
@@ -248,13 +203,12 @@ a {
     font-size: 15px;
     padding: 0 5px 5px 5px;
 }
-.hoverFade:hover { opacity: 50%; }
-.linkHover:hover { opacity: 50%; }
-
-
+.projectCard:hover {
+    opacity: 50%;
+}
 
 /* Work image ids Start*/
-#surf-report        { background-image: url(../Images/projectCard-Images/surf\ report.jpg); }
+/* #surf-report        { background-image: url(../Images/projectCard-Images/surf\ report.jpg); }
 #led-wall           { background-image: url(../Images/projectCard-Images/led\ wall.jpeg); }
 #calculator         { background-image: url(../Images/projectCard-Images/calculator.png); }
 #pastel-puzzle      { background-image: url(../Images/projectCard-Images/pastel\ puzzle.jpg); }
@@ -271,7 +225,7 @@ a {
 
 #email-icon     { background-image: url(../Images/555-phone-number.jpg); }
 #github-icon    { background-image: url(../Images/white-icons/github/github1.png); }
-#linkedin-icon  { background-image: url(../Images/white-icons/linkedin/linkedin1.png); }
+#linkedin-icon  { background-image: url(../Images/white-icons/linkedin/linkedin1.png); } */
 
 .footer-icon {
     height: 20px;
@@ -284,11 +238,6 @@ a {
 .flex-center {
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-.flex-align-center {
-    display: flex;
-    /* justify-content: center; */
     align-items: center;
 }
 footer {
@@ -311,10 +260,10 @@ footer nav ul {
     background-color: blueviolet;
     /* display: none; */
 }
-
-.pointer { cursor: pointer; }
-
-.hoverColorChange:hover { color: var(--main); }
+.hide2 {
+    background-color: rgb(43, 226, 67);
+    /* display: none; */
+}
 
 @media screen and (max-width: 1300px) { .grid { grid-template-columns: 33% 33% 33%; } }
 @media screen and (max-width: 900px) { .grid { grid-template-columns: 50% 50%; }}
