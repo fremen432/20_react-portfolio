@@ -20,12 +20,12 @@ function App() {
     <>
       {/* <Header></Header> */}
       <header>
-            <h1 id="bigName" className="pointer" onClick={ () => { showAboutMe(true); showProjects(false); showContactMe(false); } } >
+            <h1 id="bigName" className="pointer" onClick={ () => { showAboutMe(true); showProjects(false); showContactMe(false); showResume(false); } } >
                 Clayton Miller
             </h1>
             <nav>
                 <ul>
-                    <li id="aboutMeNav"  >
+                    <li>
                         <a className="pointer hoverColorChange" onClick={ () => { showAboutMe(true); showProjects(false); showContactMe(false); showResume(false); } } >About Me</a>
                     </li>
                     <li>
