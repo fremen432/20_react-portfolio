@@ -170,12 +170,19 @@ a {
 
 /* About Me */    
 #cbm-profile {
+    background-image: url(../Images/profile-pic.jpg);
     /* height: auto; */
-    margin: 10px;
-    max-width: 300px;
-    max-height: 300px;
-    background-size: cover;
+    /* margin: 10px; */
+    /* max-width: 300px; */
+    /* max-height: 300px; */
+    background-size: cover; 
     background-position: center;
+    /* height: 100%;
+    width: 100%; */
+    
+    height: 400px;
+    width: 400px;
+
 }
 
 
@@ -291,6 +298,7 @@ a {
 #email-icon     { background-image: url(../Images/555-phone-number.jpg); }
 #github-icon    { background-image: url(../Images/white-icons/github/github1.png); }
 #linkedin-icon  { background-image: url(../Images/white-icons/linkedin/linkedin1.png); }
+
 
 .footer-icon {
     height: 20px;

@@ -1,12 +1,12 @@
 import React from "react";
-import coverImage from '../Assets/profile-pic.jpg'
 function AboutMe() {
     return (
         <div id="#about-me" class="section-container flex-around ">
         <h2 class="section-title">About Me </h2>
 
         <article class="content-container box">
-            <img id="cbm-profile" src="./Assets/Images/Facebook profile pic.jpg" alt="Profile picture of Clayton Miller" />
+            {/* <img id="cbm-profile" src="" alt="Profile picture of Clayton Miller" /> */}
+            <div id="cbm-profile" ></div>
             <p class="content-right-p">
                 Clayton Miller is a budding coder and web developer located in the Austin TX area. 
                 He started his journey in web development with the Full-Stack Web Development bootcamp at the University of Texas.
