@@ -7,6 +7,14 @@ function Projects() {
 
             <article class=" content-container grid box ">
 
+                <div id="team-profile-generator"  class= "projectCard">
+                    <p class="colorMain  flex-center projTitle" >E-commerce Website</p>
+                    <div class="projectLinks" >
+                        <a className="colorMain flex-center projLink" href="https://afternoon-bayou-98700.herokuapp.com/about" target="_blank">Live Page</a>
+                        <a className="colorMain flex-center projLink" href="https://github.com/fremen432/20_react-portfolio" target="_blank">Repository</a>
+                    </div>
+                </div>
+
                 <div id= "Eazy-Eatz" class= "projectCard ">
                     <p class="colorMain  flex-center projTitle" >Recipe Finder Application</p>
                     <div class="projectLinks" >
