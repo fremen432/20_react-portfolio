@@ -8,7 +8,7 @@
 
 <div align="center">
     <!-- <img src="./assets/screenshot.png" width="600px"> -->
-    <img src="./assets/react-portfolio-video.gif" width="100%">
+    <img src="./src/assets/Images/react-portfolio-video.gif" width="100%">
 </div>
 
 ## Challenge Description:
