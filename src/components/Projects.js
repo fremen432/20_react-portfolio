@@ -34,7 +34,7 @@ function Projects() {
                 <div id="passwordGenerator"  class= "projectCard">
                     <p class="colorMain  flex-center projTitle" >Password Generator</p>
                     <div class="projectLinks" >
-                        <a className="colorMain flex-center projLink" href="http://www.claytonmiller.tech/projects/password-generator/" target="_blank">Live Page</a>
+                        <a className="colorMain flex-center projLink" href="https://fremen432.github.io/Random-Password-Generator/" target="_blank">Live Page</a>
                         <a className="colorMain flex-center projLink" href="https://github.com/fremen432/Random-Password-Generator" target="_blank">Repository</a>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ function Projects() {
                 <div id="eCommerce-backEnd"  class= "projectCard">
                     <p class="colorMain  flex-center projTitle" >E-Commerce Back-End</p>
                     <div class="projectLinks" >
-                        <a className="colorMain flex-center projLink" href="https://github.com/fremen432/e-commerce-back-end" target="_blank">Live Page</a>
+                        {/* <a className="colorMain flex-center projLink" href="https://github.com/fremen432/e-commerce-back-end" target="_blank">Live Page</a> */}
                         <a className="colorMain flex-center projLink" href="https://github.com/fremen432/e-commerce-back-end" target="_blank">Repository</a>
                     </div>
                 </div>
@@ -58,7 +58,7 @@ function Projects() {
                 <div id="team-profile-generator"  class= "projectCard">
                     <p class="colorMain  flex-center projTitle" >Command Line Application</p>
                     <div class="projectLinks" >
-                        <a className="colorMain flex-center projLink" href="https://www.youtube.com/watch?v=MmCSwY2uNWg" target="_blank">Live Page</a>
+                        {/* <a className="colorMain flex-center projLink" href="https://www.youtube.com/watch?v=MmCSwY2uNWg" target="_blank">Live Page</a> */}
                         <a className="colorMain flex-center projLink" href="https://github.com/fremen432/team-profile-generator" target="_blank">Repository</a>
                     </div>
                 </div>
