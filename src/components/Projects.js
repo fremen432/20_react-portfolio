@@ -42,7 +42,7 @@ function Projects() {
                 <div id="workDayScheduler"  class= "projectCard">
                     <p class="colorMain  flex-center projTitle" >Work Day Scheduler</p>
                     <div class="projectLinks" >
-                        <a className="colorMain flex-center projLink" href="http://www.claytonmiller.tech/projects/work-day-scheduler/" target="_blank">Live Page</a>
+                        <a className="colorMain flex-center projLink" href="https://fremen432.github.io/Work-Day-Scheduler/" target="_blank">Live Page</a>
                         <a className="colorMain flex-center projLink" href="https://github.com/fremen432/Work-Day-Scheduler" target="_blank">Repository</a>
                     </div>
                 </div>
