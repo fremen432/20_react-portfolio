@@ -18,7 +18,7 @@ function Projects() {
                 <div id= "Eazy-Eatz" class= "projectCard ">
                     <p class="colorMain  flex-center projTitle" >Recipe Finder Application</p>
                     <div class="projectLinks" >
-                        <a className="colorMain flex-center projLink" href="http://www.claytonmiller.tech/projects/eazy-eatz/" target="_blank">Live Page</a>
+                        <a className="colorMain flex-center projLink" href="https://fremen432.github.io/Eazy-Eatz/" target="_blank">Live Page</a>
                         <a className="colorMain flex-center projLink" href="https://github.com/fremen432/Eazy-Eatz" target="_blank">Repository</a>
                     </div>
                 </div>
