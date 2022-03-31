@@ -5,7 +5,7 @@ import "../assets/js/contact-form"
 
 function ContactMe() {
     return (
-        <div id="#contact-me" class=" section-container flex-around">
+        <div id="contactMe" class=" section flex-around">
         <h2 class="section-title">Contact Me</h2>
 
             <div class="content-container box" >

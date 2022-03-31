@@ -1,10 +1,6 @@
 import React from "react";
 
-// const feather = require('feather-icons')
-
 function Footer() {
-    // feather.replace()
-
     return (
         <footer >
             <nav id= "contact-nav " >
