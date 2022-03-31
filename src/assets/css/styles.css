@@ -51,6 +51,9 @@
 
 /* Header */
 header {
+    /* position: relative; */
+    z-index: 1;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -193,53 +196,90 @@ a {
 .projectCard-link:hover {
     background-color: var(--main2);
 }
-.projectCard-wrapper{
+/* .projectCard-wrapper{
     position: relative;
 
-}
-.projectCard-image{
-
-    position: relative;
-    z-index: -1;
-
-    width: 100%;
-    /* height: 100%; */
-
-    /* height: 100px;
-    width: 100px; */
-}
-
+} */
 .projectCard {
-    /* position: absolute; */
-    /* z-index: 0; */
-    /* top:0%;
-    bottom:0%;
-    left:0%;
-    right:0%; */
-  
-    /* padding: 5px, 5px, 5px, 5px; */
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
+    position: relative;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     height: 300px;
-    
-    /* margin: 10px; */
+
+    margin: 5px;
     border: 5px solid var(--main);
-
     overflow-y: hidden;
-
-    /* background-position: center top; */
-    /* background-size: cover; */
 }
+
+.projectCard:hover .projectCard-fadeElement {
+    /* animation: fade_OUT_HALF 0.5s ease-in 0s 1 forwards; */
+    animation-name: fade_IN_HALF_2;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+.projectCard:hover .projectCard-content {
+    /* animation: fade_IN_FULL 0.5s ease-in 0s 1 forwards; */
+    animation-name: fade_IN_FULL;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+.projectCard-image{
+    position: absolute;
+    
+    width: 100%;
+    
+    opacity: 100%;
+
+    /* animation: fade_IN_HALF 0.5s ease-in 0s 1 forwards; */
+    animation-name: fade_IN_HALF;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.projectCard-fadeElement{
+    background-color: white;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+
+    animation-name: fade_OUT_HALF_2;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
 .projectCard-content{
-    position: relative;
-    /* z-index: 1; */
+    position: absolute;
+    /* z-index: -1; */
+    
+    width: 100%;
+    height: 100%;
+    
+    /* animation: fade_OUT_FULL 0.5s ease-in 0s 1 forwards; */
+    animation-name: fade_OUT_FULL;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .projectCard h3 {
@@ -348,6 +388,88 @@ footer nav ul {
     display: none;
 }
 
+/* ANIMATIONS */
+
+.fadeIn_FULL {
+    animation-name: fade_IN_FULL;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+.fadeOut_FULL {
+    animation-name: fade_OUT_FULL;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.fadeIn_HALF {
+    animation-name: fade_IN_HALF;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+.fadeOut_HALF {
+    animation-name: fade_OUT_HALF;
+    animation-duration: 200ms;
+    /* animation-fill-mode: forwards; */
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+@keyframes fade_IN_FULL {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade_OUT_FULL {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+@keyframes fade_IN_HALF_1 {
+    0% {
+      opacity: 50%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+  @keyframes fade_OUT_HALF_1 {
+    0% {
+      opacity: 100%;
+    }
+    100% {
+      opacity: 50%;
+    }
+  }
+  
+@keyframes fade_IN_HALF_2 {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 50%;
+    }
+  }
+  @keyframes fade_OUT_HALF_2 {
+    0% {
+      opacity: 50%;
+    }
+    100% {
+      opacity: 0%;
+    }
+  }
+  
 @media screen and (max-width: 1300px) { .grid { grid-template-columns: 33% 33% 33%; } }
 @media screen and (max-width: 900px) { .grid { grid-template-columns: 50% 50%; }}
 @media screen and (max-width: 860px) {
