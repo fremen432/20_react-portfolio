@@ -93,4 +93,24 @@ const featuredProject = {
     ]
 }
 
-export { projects, featuredProject }
+const contactLinks = [
+    {
+        platform: 'Email',
+        href: 'mailto:cbmiller4897@gmail.com',
+    },
+    {
+        platform: 'LinkedIn',
+        href: 'https://www.linkedin.com/in/clayton-miller-20844810a',
+    },
+    {
+        platform: 'GitHub',
+        href: 'https://github.com/fremen432',
+    },
+    {
+        platform: 'Stack OverFlow',
+        href: 'https://stackoverflow.com/users/16523713/cmiller31',
+    },
+
+]
+
+export { projects, featuredProject, contactLinks }

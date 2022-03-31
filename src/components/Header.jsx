@@ -2,8 +2,6 @@ import { Link } from "react-router-dom"
 
 export default function Header(props) {
 
-    const { page, setPage } = props 
-
     return(
         <>
             <header>

@@ -1,3 +1,5 @@
+.box { border: 1px solid black; }
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -19,46 +21,41 @@
     --lake-Img: url("../Images/lake.jpg");
     --profile-pic: url('../Images/profile-pic.jpg');
 
-    --header_footer_height: 100px;
+    --header_height: 100px;
+    --footer_height: 60px;
     --sectionHeight: calc(100vh - var(--header_footer_height) * 2);
 }
 
-#surf-report        { background-image: url(../Images/projectCard-Images/surf\ report.jpg); }
-#led-wall           { background-image: url(../Images/projectCard-Images/led\ wall.jpeg); }
-#calculator         { background-image: url(../Images/projectCard-Images/calculator.png); }
-#pastel-puzzle      { background-image: url(../Images/projectCard-Images/pastel\ puzzle.jpg); }
-#Horeison           { background-image: url(../Images/projectCard-Images/digital-marketing-meeting.jpg); }
-#run-buddy          { background-image: url(../Images/projectCard-Images/hero-bg.jpg); }
+#surf-report            { background-image: url(../Images/projectCard-Images/surf\ report.jpg); }
+#led-wall               { background-image: url(../Images/projectCard-Images/led\ wall.jpeg); }
+#calculator             { background-image: url(../Images/projectCard-Images/calculator.png); }
+#pastel-puzzle          { background-image: url(../Images/projectCard-Images/pastel\ puzzle.jpg); }
+#Horeison               { background-image: url(../Images/projectCard-Images/digital-marketing-meeting.jpg); }
+#run-buddy              { background-image: url(../Images/projectCard-Images/hero-bg.jpg); }
 
-#passwordGenerator  { background-image: url(../Images/projectCard-Images/passwordGenerator.png); }
-#passwordGenerator  { background-image: url(../Images/projectCard-Images/passwordGenerator.png); }
-#workDayScheduler   { background-image: url(../Images/projectCard-Images/workDayScheduler.png); }
-#Eazy-Eatz          { background-image: url(../Images/projectCard-Images/eazy-eatz.png); }
-#eCommerce-backEnd  { background-image: url(../Images/projectCard-Images/e-commerce-back-end.jpeg); background-position: center; }
-#Full-Stack-Website { background-image: url(../Images/projectCard-Images/armadillo-materials.png); }
+#passwordGenerator      { background-image: url(../Images/projectCard-Images/passwordGenerator.png); }
+#passwordGenerator      { background-image: url(../Images/projectCard-Images/passwordGenerator.png); }
+#workDayScheduler       { background-image: url(../Images/projectCard-Images/workDayScheduler.png); }
+#Eazy-Eatz              { background-image: url(../Images/projectCard-Images/eazy-eatz.png); }
+#eCommerce-backEnd      { background-image: url(../Images/projectCard-Images/e-commerce-back-end.jpeg); background-position: center; }
+#Full-Stack-Website     { background-image: url(../Images/projectCard-Images/armadillo-materials.png); }
 #team-profile-generator { background-image: url(../Images/projectCard-Images/team-profile-generator.png); }
-#e-commerce { background-image: url(../Images/projectCard-Images/e-commerce.png); }
+#e-commerce             { background-image: url(../Images/projectCard-Images/e-commerce.png); }
 
 
-#email-icon     { background-image: url(../Images/555-phone-number.jpg); }
-#github-icon    { background-image: url(../Images/white-icons/github/github1.png); }
-#linkedin-icon  { background-image: url(../Images/white-icons/linkedin/linkedin1.png); }
+#email-icon             { background-image: url(../Images/555-phone-number.jpg); }
+#github-icon            { background-image: url(../Images/white-icons/github/github1.png); }
+#linkedin-icon          { background-image: url(../Images/white-icons/linkedin/linkedin1.png); }
 
-.box { border: 1px solid black; }
 
-header, footer {
-    height: var(--header_footer_height);
-
-    display: flex;
-
-}
 
 /* Header */
 header {
-    /* display: flex; */
-    flex-wrap: wrap;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+
+    flex-wrap: wrap;
 
     position: fixed;
 
@@ -66,7 +63,8 @@ header {
     background-size: cover;
     background-position: center;
 
-    height: var(--header_footer_height);
+    height: var(--header_height);
+    width: 100%;
     color: var(--white-text);
 }
 
@@ -210,13 +208,13 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
 
-    height: var(--header_footer_height);
+    height: var(--footer_height);
     padding: 0 5px;
     background-color: var(--main);
     color: var(--white-text);
@@ -270,12 +268,11 @@ footer nav ul {
     align-items: center;
 }
 .section { 
-    /* min-height: 100vh; */
-    min-height: var(--sectionHeight);
-
-    padding-top: 10px; 
-    padding-bottom: 10px; 
+    padding-top: calc( var(--header_height) + 10px); 
+    min-height: 100vh;
+    padding-bottom: calc( var(--footer_height) + 10px); 
 }
+
 .section-title {
     display: flex;
     justify-content: flex-end;

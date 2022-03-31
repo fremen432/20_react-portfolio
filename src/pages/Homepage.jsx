@@ -6,10 +6,8 @@ export default function Homepage() {
     return (
         <>
             <Header />
-            <div className="body_footer_wrapper">
-                <Body />
-                <Footer/>
-            </div>
+            <Body />
+            <Footer/>
         </>
     )
 }

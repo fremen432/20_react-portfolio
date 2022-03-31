@@ -2,10 +2,10 @@ import React from "react";
 
 function AboutMe() {
     return (
-        <div id="aboutMe" class="section section flex-around box ">
+        <div id="aboutMe" class="section section flex-around">
             <h2 class="section-title">About Me </h2>
 
-            <div class="content-container box">
+            <div class="content-container">
                 {/* <img id="cbm-profile" src="" alt="Profile picture of Clayton Miller" /> */}
                 <div id="cbm-profile" ></div>
                 <p class="content-right-p">

@@ -3,12 +3,12 @@ import React from "react";
 import "../assets/css/contact-form.css"
 import "../assets/js/contact-form"
 
-function ContactMe() {
+export default function ContactMe() {
     return (
-        <div id="contactMe" class=" section flex-around">
-        <h2 class="section-title">Contact Me</h2>
+        <div id="contactMe" class="section flex-around">
+            <h2 class="section-title">Contact Me</h2>
 
-            <div class="content-container box" >
+            <div class="content-container">
 
                 <div class="container">
                     <form action="https://formspree.io/f/xknyozbk" method="POST" id="my-form">
@@ -40,8 +40,5 @@ function ContactMe() {
                 
             </div>
         </div>
-        
     )
 }
-
-export default ContactMe;
