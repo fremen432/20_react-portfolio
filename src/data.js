@@ -1,10 +1,30 @@
+// const projImage_
+
+// import projectImages from '../src/assets/Images';
+
+import projectImage_burkholderEyelashes from './assets/Images/projectCard-Images/e-commerce.png'
+import projectImage_eazyEatz from './assets/Images/projectCard-Images/eazy-eatz.png'
+import projectImage_armadilloConstruction from './assets/Images/projectCard-Images/armadillo-materials.png'
+import projectImage_passwordGenerator from './assets/Images/projectCard-Images/passwordGenerator.png'
+import projectImage_workDayScheduler from './assets/Images/projectCard-Images/workDayScheduler.png'
+import projectImage_backEnd from './assets/Images/projectCard-Images/e-commerce-back-end.jpeg'
+import projectImage_teamProfile from './assets/Images/projectCard-Images/team-profile-generator.png'
+
+import projectImage_simplyPho_homepage from './assets/Images/projectCard-Images/simplyPho-homepage.png'
+import projectImage_simplyPho_orderpage from './assets/Images/projectCard-Images/simplyPho-orderpage.png'
+import projectImage_simplyPho_homepage_full from './assets/Images/projectCard-Images/simplyPho-homepage-full.png'
+import projectImage_simplyPho_orderpage_full from './assets/Images/projectCard-Images/simplyPho-orderpage-full.png'
+
+const imgPath = '/src/assets/Images/projectCard-Images/'
+
 const projects = [
     {
         projName: 'Burkholder Eyelashes',
+        projId: 'burkholder-eyelashes',
         title: 'ReactJS E-commerce Website',
         projLink: 'https://github.com/fremen432/burkholder-eyelashes-refactoring',
         liveLink: 'https://coruscating-manatee-dee84b.netlify.app/',
-        image: './assets/Images/projectCard-Images/e-commerce.png',
+        image: projectImage_burkholderEyelashes,
         technologies: [
             'React JS',
             'Tailwind CSS',
@@ -16,7 +36,7 @@ const projects = [
         title: 'Recipe Finder Application',
         projLink: 'https://github.com/fremen432/eazy-eatz-refactor',
         liveLink: 'https://shiny-custard-6f1f83.netlify.app/',
-        image: './assets/Images/projectCard-Images/eazy-eatz.png',
+        image: projectImage_eazyEatz,
         technologies: 'Javascript'
     },
     {
@@ -24,7 +44,7 @@ const projects = [
         title: 'Professional Full-Stack Website',
         projLink: 'https://github.com/MickeyPhillips/Project_2',
         liveLink: 'https://glacial-reef-85694.herokuapp.com/',
-        image: './assets/Images/projectCard-Images/armadillo-materials.png',
+        image: projectImage_armadilloConstruction,
         technologies: [
             'HTML5',
             'Tailwind CSS',
@@ -36,7 +56,7 @@ const projects = [
         title: 'Random Password Generator',
         projLink: 'https://github.com/fremen432/Random-Password-Generator',
         liveLink: 'https://fremen432.github.io/Random-Password-Generator/',
-        image: './assets/Images/projectCard-Images/passwordGenerator.png',
+        image: projectImage_passwordGenerator,
         technologies: 'Javascript'
     },
     {
@@ -44,7 +64,7 @@ const projects = [
         title: 'Work Day Scheduler',
         projLink: 'https://github.com/fremen432/Work-Day-Scheduler',
         liveLink: 'https://fremen432.github.io/Work-Day-Scheduler/',
-        image: './assets/Images/projectCard-Images/workDayScheduler.png',
+        image: projectImage_workDayScheduler,
         technologies: [
             'Javascript',
             'Moment JS',
@@ -55,7 +75,7 @@ const projects = [
         title: 'E-Commerce Back End',
         projLink: 'https://github.com/fremen432/e-commerce-back-end',
         liveLink: '',
-        image: './assets/Images/projectCard-Images/e-commerce-back-end.jpeg',
+        image: projectImage_backEnd,
         technologies: [
             'Javascript',
         ]
@@ -65,7 +85,7 @@ const projects = [
         title: 'Command Line Application',
         projLink: 'https://github.com/fremen432/team-profile-generator',
         liveLink: '',
-        image: './assets/Images/projectCard-Images/team-profile-generator.png',
+        image: projectImage_teamProfile,
         technologies: [
             'Inquirer',
             'Node JS',
@@ -86,6 +106,7 @@ const featuredProject = {
     title: 'React Restaurant Website',
     projLink: 'https://github.com/fremen432/online-restaraunt-order',
     liveLink: 'https://adorable-tiramisu-8d772f.netlify.app/',
+    image: projectImage_simplyPho_homepage_full,
     technologies: [
         'React JS',
         'Tailwind CSS',
