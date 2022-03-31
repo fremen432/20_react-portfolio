@@ -15,10 +15,11 @@ export default function Projects() {
                         <img className="projectCard-image " src={project.image} alt={'Image for Clayton Miller project ' + project.projName} />
                         <div className="projectCard-fadeElement" ></div>
                         <div className="projectCard-content">
-                            <p className='projectCard-name colorMain flex-center ' >{project.projName}</p>
+                            {/* <p className='projectCard-name colorMain flex-center ' >{project.projName}</p> */}
                             <div className="projectLinks">
-                                <a className="projectCard-link colorMain flex-center " href={project.liveLink} target="_blank">Live Page</a>
-                                <a className="projectCard-link colorMain flex-center " href={project.projLink} target="_blank">Repository</a>
+                                <a className=" projectLinks-el projectCard-link colorMain " href={project.liveLink} target="_blank">Live Page</a>
+                                <p className=' projectLinks-el projectCard-description ' >{project.description}</p>
+                                <a className=" projectLinks-el projectCard-link colorMain " href={project.projLink} target="_blank">Repository</a>
                             </div>
                         </div>
                     </div>

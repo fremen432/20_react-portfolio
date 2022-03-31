@@ -21,7 +21,7 @@ const projects = [
     {
         projName: 'Burkholder Eyelashes',
         projId: 'burkholder-eyelashes',
-        title: 'ReactJS E-commerce Website',
+        description: 'ReactJS E-commerce Website',
         projLink: 'https://github.com/fremen432/burkholder-eyelashes-refactoring',
         liveLink: 'https://coruscating-manatee-dee84b.netlify.app/',
         image: projectImage_burkholderEyelashes,
@@ -33,7 +33,7 @@ const projects = [
     },
     {
         projName: 'Eazy Eatz',
-        title: 'Recipe Finder Application',
+        description: 'Recipe Finder Application',
         projLink: 'https://github.com/fremen432/eazy-eatz-refactor',
         liveLink: 'https://shiny-custard-6f1f83.netlify.app/',
         image: projectImage_eazyEatz,
@@ -41,7 +41,7 @@ const projects = [
     },
     {
         projName: 'Armadillo Construction',
-        title: 'Professional Full-Stack Website',
+        description: 'Professional Full-Stack Website',
         projLink: 'https://github.com/MickeyPhillips/Project_2',
         liveLink: 'https://glacial-reef-85694.herokuapp.com/',
         image: projectImage_armadilloConstruction,
@@ -53,7 +53,7 @@ const projects = [
     },
     {
         projName: 'Javascript Password Generator',
-        title: 'Random Password Generator',
+        description: 'Random Password Generator',
         projLink: 'https://github.com/fremen432/Random-Password-Generator',
         liveLink: 'https://fremen432.github.io/Random-Password-Generator/',
         image: projectImage_passwordGenerator,
@@ -61,7 +61,7 @@ const projects = [
     },
     {
         projName: 'Work Day Scheduler',
-        title: 'Work Day Scheduler',
+        description: 'Work Day Scheduler',
         projLink: 'https://github.com/fremen432/Work-Day-Scheduler',
         liveLink: 'https://fremen432.github.io/Work-Day-Scheduler/',
         image: projectImage_workDayScheduler,
@@ -72,7 +72,7 @@ const projects = [
     },
     {
         projName: 'E-Commerce Back End',
-        title: 'E-Commerce Back End',
+        description: 'E-Commerce Back End',
         projLink: 'https://github.com/fremen432/e-commerce-back-end',
         liveLink: '',
         image: projectImage_backEnd,
@@ -82,7 +82,7 @@ const projects = [
     },
     {
         projName: 'Team Profile Generator',
-        title: 'Command Line Application',
+        description: 'Command Line Application',
         projLink: 'https://github.com/fremen432/team-profile-generator',
         liveLink: '',
         image: projectImage_teamProfile,
@@ -93,7 +93,7 @@ const projects = [
     }
     // {
     //     projName: '',
-    //     title: '',
+    //     description: '',
     //     projLink: '',
     //     liveLink: '',
     //     technologies: [
@@ -103,7 +103,7 @@ const projects = [
 ]
 const featuredProject = {
     projName: 'Simply Pho House',
-    title: 'React Restaurant Website',
+    description: 'React Restaurant Website',
     projLink: 'https://github.com/fremen432/online-restaraunt-order',
     liveLink: 'https://adorable-tiramisu-8d772f.netlify.app/',
     image: projectImage_simplyPho_homepage_full,

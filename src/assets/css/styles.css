@@ -24,6 +24,14 @@
     --header_height: 100px;
     --footer_height: 60px;
     --sectionHeight: calc(100vh - var(--header_footer_height) * 2);
+    --animation-duration1: 0.2s;
+
+    --animation-slideUP-marginTop-from: 0px;
+    --animation-slideUP-marginTop-to: -20px;
+
+    --animation-slideUP-marginBottom-from: 20px;
+    --animation-slideUP-marginBottom-to: 40px;
+
 }
 
 #surf-report            { background-image: url(../Images/projectCard-Images/surf\ report.jpg); }
@@ -182,16 +190,34 @@ a {
 .projectCard-name {
     height: 40px;
 }
-.projectLinks {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.projectCard-link {
-    height: 35px;
+.projectLinks {
+
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    height: 100%;
+    /* justify-content: space-between;
+    align-items: center; */
+}
+.projectLinks-el {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    height: 100%;
+    width: 100%;
     font-size: 1rem;
-    width: 8rem;
+}
+.projectCard-description{
+    font-weight: bold;
+}
+.projectCard-link {
+    /* height: 35px;
+    font-size: 1rem; */
+    /* width: 8rem; */
+    /* width:50%; */
 }
 .projectCard-link:hover {
     background-color: var(--main2);
@@ -212,12 +238,29 @@ a {
     margin: 5px;
     border: 5px solid var(--main);
     overflow-y: hidden;
+
+    animation-name: slide_DOWN;
+    animation-duration: var(--animation-duration1);
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+.projectCard:hover {
+    animation-name: slide_UP;
+    animation-duration: var(--animation-duration1);
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .projectCard:hover .projectCard-fadeElement {
     /* animation: fade_OUT_HALF 0.5s ease-in 0s 1 forwards; */
     animation-name: fade_IN_HALF_2;
-    animation-duration: 0.5s;
+    animation-duration: var(--animation-duration1);
     animation-timing-function: ease-in-out;
     animation-delay: 0s;
     animation-iteration-count: 1;
@@ -227,7 +270,7 @@ a {
 .projectCard:hover .projectCard-content {
     /* animation: fade_IN_FULL 0.5s ease-in 0s 1 forwards; */
     animation-name: fade_IN_FULL;
-    animation-duration: 0.5s;
+    animation-duration: var(--animation-duration1);
     animation-timing-function: ease-in;
     animation-delay: 0s;
     animation-iteration-count: 1;
@@ -244,14 +287,14 @@ a {
 
     /* animation: fade_IN_HALF 0.5s ease-in 0s 1 forwards; */
     animation-name: fade_IN_HALF;
-    animation-duration: 0.5s;
+    animation-duration: var(--animation-duration1);
     animation-timing-function: ease-in;
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 .projectCard-fadeElement{
-    background-color: white;
+    background-color: black;
 
     position: absolute;
     width: 100%;
@@ -259,7 +302,7 @@ a {
     opacity: 0;
 
     animation-name: fade_OUT_HALF_2;
-    animation-duration: 0.5s;
+    animation-duration: var(--animation-duration1);
     animation-timing-function: ease-in;
     animation-delay: 0s;
     animation-iteration-count: 1;
@@ -275,7 +318,7 @@ a {
     
     /* animation: fade_OUT_FULL 0.5s ease-in 0s 1 forwards; */
     animation-name: fade_OUT_FULL;
-    animation-duration: 0.5s;
+    animation-duration: var(--animation-duration1);
     animation-timing-function: ease-in;
     animation-delay: 0s;
     animation-iteration-count: 1;
@@ -412,8 +455,7 @@ footer nav ul {
 .fadeOut_HALF {
     animation-name: fade_OUT_HALF;
     animation-duration: 200ms;
-    /* animation-fill-mode: forwards; */
-    animation-fill-mode: both;
+    animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
 
@@ -470,6 +512,32 @@ footer nav ul {
     }
   }
   
+  @keyframes slide_DOWN {
+    0% {
+        margin-top: var(--animation-slideUP-marginTop-to);
+        margin-bottom: var(--animation-slideUP-marginBottom-to);
+          }
+    
+    100% {
+        margin-top: var(--animation-slideUP-marginTop-from);
+        margin-bottom: var(--animation-slideUP-marginBottom-from);
+          }
+    
+  }
+  @keyframes slide_UP {
+    0% {
+      margin-top: var(--animation-slideUP-marginTop-from);
+      margin-bottom: var(--animation-slideUP-marginBottom-from);
+
+    }
+    
+    100% {
+      margin-top: var(--animation-slideUP-marginTop-to);
+      margin-bottom: var(--animation-slideUP-marginBottom-to);
+    }
+  }
+  
+
 @media screen and (max-width: 1300px) { .grid { grid-template-columns: 33% 33% 33%; } }
 @media screen and (max-width: 900px) { .grid { grid-template-columns: 50% 50%; }}
 @media screen and (max-width: 860px) {
