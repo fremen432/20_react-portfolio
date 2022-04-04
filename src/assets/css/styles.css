@@ -244,7 +244,11 @@ a {
 .projectCards_container_all{
     display: grid;
     grid-template-columns: auto auto ;
-    width: 100%
+
+    /* margin-left: 50px;
+    margin-right: 50px; */
+    width: 100%;
+    max-width: 1200px;
 }
 
 .projectLinks {
@@ -287,9 +291,12 @@ a {
     flex-direction: column;
     justify-content: space-between;
 
+    margin-left: 12px;
+    margin-right: 12px;
+
     height: 300px;
 
-    margin: 5px;
+    /* margin: 5px; */
     border: 5px solid var(--main);
     overflow-y: hidden;
 
@@ -423,7 +430,6 @@ footer nav ul {
 .icon{
     height: 100%;
     width: 100%;
-    
 }
 
 
@@ -433,8 +439,6 @@ footer nav ul {
     height: 50px;
     
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
 }
 
 .w-100{
@@ -578,10 +582,19 @@ input, textarea {
     height: 100%;
     width: 100%;
 
-    padding-top: 20px ;
-    padding-bottom: 20px ;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     font-size: 25px;
+}
+
+.max-height{
+    max-width: 800px;
+}
+
+.resume-image{
+    max-width: 800px;
+    width: 90%;
 }
 
 .section-description{

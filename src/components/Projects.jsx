@@ -76,8 +76,7 @@ export default function Projects() {
                     <img className="projectCard-image " src={project.image} alt={'Image for Clayton Miller project ' + project.projName} />
                     <div className="projectCard-fadeElement" ></div>
                     <div className="projectCard-content">
-                        <div className="projectLinks" >
-
+                        <div className="projectLinks">
                             <a className="projectLinks-el projectCard-link colorMain " href={project.liveLink} target="_blank">Live Page</a>
                             <p className='projectLinks-el projectCard-description box ' >{project.description}</p>
                             <a className="projectLinks-el projectCard-link colorMain " href={project.projLink} target="_blank">Repository</a>

@@ -10,7 +10,7 @@ function Resume() {
         <div id="resume" class="section ">
             <h2 class="section-title">Check out my resume!</h2>
 
-            <img className="resume-image" src={reactResume} alt="Clayton Miller's resume" />
+            <img className="resume-image " src={reactResume} alt="Clayton Miller's resume" />
 
             {/* <div class="box flex-col" >
                 <a href={resumePDF}><button class="projLink colorMain" >Download</button></a>

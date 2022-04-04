@@ -10,30 +10,30 @@
 
 /* mobile L VW  */
 @media (min-width: 425px) {
-    .projectCards_container_misc {
+    .projectCards_container_all {
         grid-template-columns: auto;
     }
 }
 
 /* tablet VW  */
 @media (min-width: 768px) {
-    .projectCards_container_misc {
+    .projectCards_container_all {
         grid-template-columns: auto auto;
     }
 }
 
 /* laptop VW  */
 @media (min-width: 1024px) {
-    .projectCards_container_misc {
+    /* .projectCards_container_all {
         grid-template-columns: auto auto auto;
-    }
+    } */
 }
 
 /* laptop L VW  */
 @media (min-width: 1440px) {
-    .projectCards_container_misc {
+    /* .projectCards_container_all {
         grid-template-columns: auto auto auto auto;
-    }
+    } */
 }
 
 @media screen and (max-width: 1300px) { .grid { grid-template-columns: 33% 33% 33%; } }
