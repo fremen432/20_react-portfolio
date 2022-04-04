@@ -3,6 +3,8 @@ import { Router, Route, Routes } from "react-router-dom";
 
 import './App.css';
 import './assets/css/styles.css';
+import'./assets/css/animations.css'
+import'./assets/css/media-queries.css'
 
 import Homepage from "./pages/Homepage";
 

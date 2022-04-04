@@ -1,0 +1,60 @@
+/* MEDIA QUERIES */
+
+/* mobile S VW  */
+@media (min-width: 320px) {
+}
+
+/* mobile M VW  */
+@media (min-width: 375px) {
+}
+
+/* mobile L VW  */
+@media (min-width: 425px) {
+    .projectCards_container_misc {
+        grid-template-columns: auto;
+    }
+}
+
+/* tablet VW  */
+@media (min-width: 768px) {
+    .projectCards_container_misc {
+        grid-template-columns: auto auto;
+    }
+}
+
+/* laptop VW  */
+@media (min-width: 1024px) {
+    .projectCards_container_misc {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+/* laptop L VW  */
+@media (min-width: 1440px) {
+    .projectCards_container_misc {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media screen and (max-width: 1300px) { .grid { grid-template-columns: 33% 33% 33%; } }
+@media screen and (max-width: 900px) { .grid { grid-template-columns: 50% 50%; }}
+@media screen and (max-width: 860px) {
+    header {
+        justify-content: space-around;
+    }
+    header h1 {
+        margin-left: 0px;
+    }
+    header nav {
+        margin-right: 0px;
+    }
+}
+@media screen and (max-width: 575px) {
+    header {
+        justify-content: center;
+        align-items: center;
+    }
+    #contact-nav {
+        padding-bottom: 20px;
+    }
+}

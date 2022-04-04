@@ -8,13 +8,13 @@ function Footer() {
                 <ul class= "flex-center ">
                     {
                         contactLinks.map( el => 
-                            <li id={el.platform} class= "contact-li"> 
                             <a 
-                            class= "pointer hoverColorChange" 
-                            href={el.href} > 
-                                {el.platform}
+                            id={el.platform}
+                            class= "footerLink-icon box" 
+                            href={el.href} 
+                            target="_blank"> 
+                                {el.icon}
                             </a>
-                        </li>
                         )
                     }
                 </ul>

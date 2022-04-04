@@ -1,44 +1,40 @@
-import React from "react";
-
-import "../assets/css/contact-form.css"
-import "../assets/js/contact-form"
+// import "../assets/css/contact-form.css"
 
 export default function ContactMe() {
     return (
-        <div id="contactMe" class="section flex-around">
-            <h2 class="section-title">Contact Me</h2>
+        <div id="contactMe" class="contactMe-section section  ">
+            <h2 class="section-title box">Send me a message!</h2>
+            <p class="section-description box">Submit the form below and I'll get back to you as soon as possible!</p>
 
-            <div class="content-container">
+            {/* <div class="contactMe-form-wrapper box "> */}
 
-                <div class="container">
-                    <form action="https://formspree.io/f/xknyozbk" method="POST" id="my-form">
-
-                    <div class="form-group">
-                        <label for="firstName"> First Name</label>
-                        <input type="text" id="firstName" name="firstName" required/>
+                <form class="contactMe-form box" action="https://formspree.io/f/xknyozbk" method="POST" id="my-form">
+                    <div class="form-group box ">
+                        <label className="contactMe-label" for="firstName">First Name:</label>
+                        <input className="contactMe-input" type="text" id="firstName" name="firstName" required/>
                     </div>
 
                     <div class="form-group">
-                        <label for="latsName">Last Name</label>
-                        <input type="text" id="lastName" name="lastName" required/>
+                        <label className="contactMe-label" for="latsName">Last Name:</label>
+                        <input className="contactMe-input" type="text" id="lastName" name="lastName" required/>
+                    </div>
+
+                    <div class="form-group box">
+                        <label className="contactMe-label" for="email">Email:</label>
+                        <input className="contactMe-input" type="email" id="email" name="email"/>
                     </div>
 
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email"/>
+                        <label className="contactMe-label" for="massage">Message:</label>
+
+                        <textarea className="contactMe-input contactMe-input-message " name="massage" id="massage" cols="30" rows="10" required></textarea>
                     </div>
 
-                    <div class="form-group">
-                        <label for="massage">Message</label>
-                        <textarea name="massage" id="massage" cols="30" rows="10" required></textarea>
-                    </div>
-
-                    <button type="submit">Submit</button>
-                    </form>
-                </div>
-                <div id="status"></div>
+                    <button className="submit-btn" type="submit">Submit</button>
+                    {/* <div id="status" className="w-100 box"></div> */}
+                </form>
                 
-            </div>
+            {/* </div> */}
         </div>
     )
 }

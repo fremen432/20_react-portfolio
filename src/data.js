@@ -1,6 +1,5 @@
-// const projImage_
-
-// import projectImages from '../src/assets/Images';
+import { AiOutlineMail, AiOutlineLinkedin, AiOutlineGithub } from 'react-icons/ai'
+import { BsStackOverflow } from 'react-icons/bs'
 
 import projectImage_burkholderEyelashes from './assets/Images/projectCard-Images/e-commerce.png'
 import projectImage_eazyEatz from './assets/Images/projectCard-Images/eazy-eatz.png'
@@ -15,7 +14,7 @@ import projectImage_simplyPho_orderpage from './assets/Images/projectCard-Images
 import projectImage_simplyPho_homepage_full from './assets/Images/projectCard-Images/simplyPho-homepage-full.png'
 import projectImage_simplyPho_orderpage_full from './assets/Images/projectCard-Images/simplyPho-orderpage-full.png'
 
-const imgPath = '/src/assets/Images/projectCard-Images/'
+const iconSize = 30;
 
 const projects = [
     {
@@ -101,9 +100,10 @@ const projects = [
     //     ]
     // },
 ]
+
 const featuredProject = {
     projName: 'Simply Pho House',
-    description: 'React Restaurant Website',
+    description: 'ReactJS Restaurant Website',
     projLink: 'https://github.com/fremen432/online-restaraunt-order',
     liveLink: 'https://adorable-tiramisu-8d772f.netlify.app/',
     image: projectImage_simplyPho_homepage_full,
@@ -114,24 +114,75 @@ const featuredProject = {
     ]
 }
 
+const topFour = [
+    {
+        projName: 'Simply Pho House',
+        description: 'ReactJS Restaurant Website',
+        projLink: 'https://github.com/fremen432/online-restaraunt-order',
+        liveLink: 'https://adorable-tiramisu-8d772f.netlify.app/',
+        image: projectImage_simplyPho_homepage_full,
+        technologies: [
+            'React JS',
+            'Tailwind CSS',
+            'Javascript'
+        ]
+    },
+    {
+        projName: 'Burkholder Eyelashes',
+        projId: 'burkholder-eyelashes',
+        description: 'ReactJS E-commerce Website',
+        projLink: 'https://github.com/fremen432/burkholder-eyelashes-refactoring',
+        liveLink: 'https://coruscating-manatee-dee84b.netlify.app/',
+        image: projectImage_burkholderEyelashes,
+        technologies: [
+            'React JS',
+            'Tailwind CSS',
+            'Javascript'
+        ]
+    },
+    {
+        projName: 'Eazy Eatz',
+        description: 'Recipe Finder Application',
+        projLink: 'https://github.com/fremen432/eazy-eatz-refactor',
+        liveLink: 'https://shiny-custard-6f1f83.netlify.app/',
+        image: projectImage_eazyEatz,
+        technologies: 'Javascript'
+    },
+    {
+        projName: 'Armadillo Construction',
+        description: 'Professional Full-Stack Website',
+        projLink: 'https://github.com/MickeyPhillips/Project_2',
+        liveLink: 'https://glacial-reef-85694.herokuapp.com/',
+        image: projectImage_armadilloConstruction,
+        technologies: [
+            'HTML5',
+            'Tailwind CSS',
+            'Javascript'
+        ]
+    },
+]
+
 const contactLinks = [
     {
         platform: 'Email',
         href: 'mailto:cbmiller4897@gmail.com',
+        icon: <AiOutlineMail size={iconSize} />
     },
     {
         platform: 'LinkedIn',
         href: 'https://www.linkedin.com/in/clayton-miller-20844810a',
+        icon: <AiOutlineLinkedin size={iconSize} />
     },
     {
         platform: 'GitHub',
         href: 'https://github.com/fremen432',
+        icon: <AiOutlineGithub size={iconSize} />
     },
-    {
-        platform: 'Stack OverFlow',
-        href: 'https://stackoverflow.com/users/16523713/cmiller31',
-    },
-
+    // {
+    //     platform: 'Stack OverFlow',
+    //     href: 'https://stackoverflow.com/users/16523713/cmiller31',
+    //     icon: <BsStackOverflow size={iconSize} />
+    // }
 ]
 
-export { projects, featuredProject, contactLinks }
+export { projects, featuredProject, contactLinks, topFour }
