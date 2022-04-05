@@ -8,7 +8,7 @@ export default function ContactMe() {
 
             {/* <div class="contactMe-form-wrapper box "> */}
 
-                <form class="contactMe-form box" action="https://formspree.io/f/xknyozbk" method="POST" id="my-form">
+                <form class="contactMe-form " action="https://formspree.io/f/xknyozbk" method="POST" id="my-form">
                     <div class="form-group box ">
                         <label className="contactMe-label" for="firstName">First Name:</label>
                         <input className="contactMe-input" type="text" id="firstName" name="firstName" required/>

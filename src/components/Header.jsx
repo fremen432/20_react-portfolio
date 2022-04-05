@@ -1,4 +1,7 @@
+import { useState } from "react"
 export default function Header(props) {
+    const [ headerLink, setHeaderLink ] = useState('aboutMe');
+
     const navLinks = [
         {
             title: 'About Me',
@@ -19,18 +22,18 @@ export default function Header(props) {
     ]
 
     return(
-        <>
-            <header>
-                <h1 id="bigName" className="aboutMe-bigName" href='#aboutMe'>Clayton Miller</h1>
-                <ul className="navLinks-unordered-list box">
-                    {navLinks.map(el =>
-                        <li className="aboutMe-li box">
-                            {/* <div className="fade-element " ></div> */}
-                            <a className="navLink-anchorTag " href={'#' + el.id}>{el.title}</a>
-                        </li>    
-                    )}
-                </ul>
-            </header>
-        </>
+        <header>
+            <h1 id="bigName" className="aboutMe-bigName" href='#aboutMe'>Clayton Miller</h1>
+            <ul className="navLinks-unordered-list box">
+                {navLinks.map(el =>
+                    <li className="aboutMe-li box">
+                        {/* <div className="fade-element " ></div> */}
+                        {/* <a className="navLink-anchorTag " href={'#' + el.id}>{el.title}</a> */}
+                        <a className="navLink-anchorTag " onClick={() => console.log(el.id)} href={'#' + el.id}>{el.title}</a>
+                        {/* <a className="navLink-anchorTag " onClick={setHeaderLink(el.id)} href={'#' + el.id}>{el.title}</a> */}
+                    </li>    
+                )}
+            </ul>
+        </header>
     )
 }
