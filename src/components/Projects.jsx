@@ -89,7 +89,7 @@ export default function Projects() {
                     <div className="projectCard-content">
                         <div className="projectLinks">
                             <p className='projectLinks-el projectCard-description box ' >{project.description}</p>
-                            <a className="projectLinks-el projectCard-link colorMain box" href={project.liveLink} target="_blank">Live Page</a>
+                            <a className="projectLinks-el projectCard-link colorMain box box-shadow" href={project.liveLink} target="_blank">Live Page</a>
                             {/* <a className="projectLinks-el projectCard-link colorMain " href={project.projLink} target="_blank">Repository</a> */}
                         </div>
                     </div>
