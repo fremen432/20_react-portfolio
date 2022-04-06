@@ -3,7 +3,7 @@ import { contactLinks } from "../data";
 
 function Footer() {
     return (
-        <footer >
+        <footer>
             <nav id= "contact-nav " >
                 <ul class= "flex-center ">
                     {

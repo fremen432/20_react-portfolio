@@ -34,6 +34,17 @@
 
 }
 
+.HP_Wrapper{
+    display: grid;
+    grid-template-rows: auto auto auto;
+
+}
+
+.body-wrapper{
+    height: calc(100vh - var(--header_height) - var(--footer_height));
+    overflow-y: auto;
+}
+
 .aboutMe-bigName{
     cursor: pointer;
 }
@@ -42,16 +53,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 
     list-style-type: none; 
 
-    margin-right: 50px;
+    margin-right: 20px;
+
+    /* margin-right: 50px; */
 }
 
 .aboutMe-li{
     margin-left: 10px;
     position: relative;
+    padding: 8px;
+    /* margin: 8px; */
+
+
+    /* margin: 8px; */
+    border-radius: 5px;
+
+    /* cursor: pointer; */
 }
+
+.aboutMe-li:hover{
+    background-color: var(--main2);
+}
+
 
 .fade-element{
     position: absolute;
@@ -67,15 +94,24 @@
 }
 
 .navLink-anchorTag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-right: 8px;
-    padding-left: 8px;
+    max-width: 100px;
+
+    margin-right:5px ;
+    margin-left:5px ;
+
+    padding: 8px;
 
     border-radius: 5px;
 
     cursor: pointer;
+    flex-wrap: wrap;
+
+    box-shadow: 2px 2px 5px black;
+    border: 1px solid var(--main3);
 }
 
 .navLink-anchorTag:hover{
@@ -89,7 +125,7 @@ body{
 
 /* Header */
 header {
-    z-index: 1;
+    /* z-index: 1; */
 
     display: flex;
     justify-content: space-between;
@@ -97,7 +133,7 @@ header {
 
     flex-wrap: wrap;
 
-    position: fixed;
+    /* position: fixed; */
 
     background-image: var(--lake-Img);
     background-size: cover;
@@ -395,9 +431,9 @@ footer {
     align-items: center;
     justify-content: center;
 
-    position: fixed;
+    /* position: fixed;
     bottom: 0;
-    left: 0;
+    left: 0; */
     width: 100%;
 
     height: var(--footer_height);
@@ -508,7 +544,7 @@ footer nav ul {
     background-color: var(--main);
     color: white;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px grey;;
+    box-shadow: 2px 2px 5px grey;
     padding: 10px;
     width: 90%;
     margin-top: 15px;
@@ -565,9 +601,7 @@ input, textarea {
     align-items: center;
     flex-direction: column;
 
-    padding-top: calc( var(--header_height) + 10px); 
-    min-height: 100vh;
-    padding-bottom: calc( var(--footer_height) + 10px); 
+    min-height: 100%;
 }
 
 .section-title {

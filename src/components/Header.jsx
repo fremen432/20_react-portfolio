@@ -26,14 +26,18 @@ export default function Header(props) {
             <h1 id="bigName" className="aboutMe-bigName" href='#aboutMe'>Clayton Miller</h1>
             <ul className="navLinks-unordered-list box">
                 {navLinks.map(el =>
-                    <li className="aboutMe-li box">
-                        {/* <div className="fade-element " ></div> */}
-                        {/* <a className="navLink-anchorTag " href={'#' + el.id}>{el.title}</a> */}
-                        <a className="navLink-anchorTag " onClick={() => console.log(el.id)} href={'#' + el.id}>{el.title}</a>
-                        {/* <a className="navLink-anchorTag " onClick={setHeaderLink(el.id)} href={'#' + el.id}>{el.title}</a> */}
-                    </li>    
+                    <a className="navLink-anchorTag box" href={'#' + el.id}>{el.title}</a>
                 )}
             </ul>
         </header>
     )
 }
+
+// {navLinks.map(el =>
+//     <li className="aboutMe-li  ">
+//         {/* <div className="fade-element " ></div> */}
+//         {/* <a className="navLink-anchorTag " href={'#' + el.id}>{el.title}</a> */}
+//         <a className="navLink-anchorTag box" onClick={() => console.log(el.id)} href={'#' + el.id}>{el.title}</a>
+//         {/* <a className="navLink-anchorTag " onClick={setHeaderLink(el.id)} href={'#' + el.id}>{el.title}</a> */}
+//     </li>    
+// )}
