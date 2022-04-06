@@ -26,7 +26,7 @@ export default function Header(props) {
             <h1 id="bigName" className="aboutMe-bigName" href='#aboutMe'>Clayton Miller</h1>
             <ul className="navLinks-unordered-list box">
                 {navLinks.map(el =>
-                    <a className="navLink-anchorTag box" href={'#' + el.id}>{el.title}</a>
+                    <a className="navLink-anchorTag box color-main" href={'#' + el.id}>{el.title}</a>
                 )}
             </ul>
         </header>

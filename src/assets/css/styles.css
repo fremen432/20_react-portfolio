@@ -95,7 +95,6 @@
 
 .box-shadow{
     box-shadow: 2px 2px 5px black;
-
 }
 
 .navLink-anchorTag{
@@ -116,7 +115,6 @@
     flex-wrap: wrap;
 
     box-shadow: 2px 2px 5px black;
-    border: 1px solid var(--main3);
 }
 
 .navLink-anchorTag:hover{
@@ -209,6 +207,8 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    max-width: 1000px;
 }
 
 .profile-pic{
@@ -264,7 +264,35 @@ a {
 }
 
 .resume-image{
-    width: 80%;
+    /* width: 80%; */
+    width: 100%;
+}
+.dark-fade-element{
+    display: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+
+.color-main{
+    background-color: var(--main);
+    color: white;
+}
+.color-main:hover{
+    background-color: var(--main2);
+
+}
+
+.resume-download-btn{
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.resume-image-anchor{
+}
+.resume-image-anchor:hover{
 }
 
 .content-container {
@@ -465,13 +493,13 @@ footer nav ul {
     height: 50px;
     width: 50px;
 
-    /* font-size: 50px; */
-
     margin-right: 10px ;
-
-    /* height: 25px;
-    width: 25px; */
+    border-radius: 5px;
 }
+.footerLink-icon:hover {
+    background-color: var(--main2);
+}
+
 
 .icon{
     height: 100%;
@@ -628,7 +656,7 @@ input, textarea {
 }
 
 .resume-image{
-    max-width: 800px;
+    /* max-width: 1600px; */
     width: 90%;
 }
 

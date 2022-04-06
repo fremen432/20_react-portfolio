@@ -6,7 +6,7 @@ function AboutMe() {
         <div id="aboutMe" class="section box">
             <h2 class="section-title box">About Me </h2>
 
-            <div class="aboutMe-container">
+            <div class="aboutMe-container box">
                 <img src={pic} id="cbm-profile" className="profile-pic box" alt="Clayton Miller profile picture" />
                 <p class="aboutMe-paragraph box">
                     <span className="aboutMe-paragraph-first-indent">Hi! I'm Clayton Miller, a web developer based in the Austin, TX area. </span>
