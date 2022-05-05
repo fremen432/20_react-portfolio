@@ -17,89 +17,74 @@ import projectImage_simplyPho_orderpage_full from './assets/Images/projectCard-I
 const iconSize = 30;
 
 const projects = [
-    {
-        projName: 'Burkholder Eyelashes',
-        projId: 'burkholder-eyelashes',
-        description: 'ReactJS E-commerce Website',
-        projLink: 'https://github.com/fremen432/burkholder-eyelashes-refactoring',
-        liveLink: 'https://coruscating-manatee-dee84b.netlify.app/',
-        image: projectImage_burkholderEyelashes,
-        technologies: [
-            'React JS',
-            'Tailwind CSS',
-            'Javascript'
-        ]
-    },
-    {
-        projName: 'Eazy Eatz',
-        description: 'Recipe Finder Application',
-        projLink: 'https://github.com/fremen432/eazy-eatz-refactor',
-        liveLink: 'https://shiny-custard-6f1f83.netlify.app/',
-        image: projectImage_eazyEatz,
-        technologies: 'Javascript'
-    },
-    {
-        projName: 'Armadillo Construction',
-        description: 'Professional Full-Stack Website',
-        projLink: 'https://github.com/MickeyPhillips/Project_2',
-        liveLink: 'https://glacial-reef-85694.herokuapp.com/',
-        image: projectImage_armadilloConstruction,
-        technologies: [
-            'HTML5',
-            'Tailwind CSS',
-            'Javascript'
-        ]
-    },
-    {
-        projName: 'Javascript Password Generator',
-        description: 'Random Password Generator',
-        projLink: 'https://github.com/fremen432/Random-Password-Generator',
-        liveLink: 'https://fremen432.github.io/Random-Password-Generator/',
-        image: projectImage_passwordGenerator,
-        technologies: 'Javascript'
-    },
-    {
-        projName: 'Work Day Scheduler',
-        description: 'Work Day Scheduler',
-        projLink: 'https://github.com/fremen432/Work-Day-Scheduler',
-        liveLink: 'https://fremen432.github.io/Work-Day-Scheduler/',
-        image: projectImage_workDayScheduler,
-        technologies: [
-            'Javascript',
-            'Moment JS',
-        ]
-    },
-    {
-        projName: 'E-Commerce Back End',
-        description: 'E-Commerce Back End',
-        projLink: 'https://github.com/fremen432/e-commerce-back-end',
-        liveLink: '',
-        image: projectImage_backEnd,
-        technologies: [
-            'Javascript',
-        ]
-    },
-    {
-        projName: 'Team Profile Generator',
-        description: 'Command Line Application',
-        projLink: 'https://github.com/fremen432/team-profile-generator',
-        liveLink: '',
-        image: projectImage_teamProfile,
-        technologies: [
-            'Inquirer',
-            'Node JS',
-        ]
-    }
-    // {
-    //     projName: '',
-    //     description: '',
-    //     projLink: '',
-    //     liveLink: '',
-    //     technologies: [
-    //         '',
-    //     ]
-    // },
-]
+	{
+		projName: "Burkholder Eyelashes",
+		projId: "burkholder-eyelashes",
+		description: "ReactJS E-commerce Website",
+		projLink:
+			"https://github.com/fremen432/burkholder-eyelashes-refactoring",
+		liveLink: "https://main--burkholder-eyelashes.netlify.app/",
+		image: projectImage_burkholderEyelashes,
+		technologies: ["React JS", "Tailwind CSS", "Javascript"],
+	},
+	{
+		projName: "Eazy Eatz",
+		description: "Recipe Finder Application",
+		projLink: "https://github.com/fremen432/eazy-eatz-refactor",
+		liveLink: "https://shiny-custard-6f1f83.netlify.app/",
+		image: projectImage_eazyEatz,
+		technologies: "Javascript",
+	},
+	{
+		projName: "Armadillo Construction",
+		description: "Professional Full-Stack Website",
+		projLink: "https://github.com/MickeyPhillips/Project_2",
+		liveLink: "https://glacial-reef-85694.herokuapp.com/",
+		image: projectImage_armadilloConstruction,
+		technologies: ["HTML5", "Tailwind CSS", "Javascript"],
+	},
+	{
+		projName: "Javascript Password Generator",
+		description: "Random Password Generator",
+		projLink: "https://github.com/fremen432/Random-Password-Generator",
+		liveLink: "https://fremen432.github.io/Random-Password-Generator/",
+		image: projectImage_passwordGenerator,
+		technologies: "Javascript",
+	},
+	{
+		projName: "Work Day Scheduler",
+		description: "Work Day Scheduler",
+		projLink: "https://github.com/fremen432/Work-Day-Scheduler",
+		liveLink: "https://fremen432.github.io/Work-Day-Scheduler/",
+		image: projectImage_workDayScheduler,
+		technologies: ["Javascript", "Moment JS"],
+	},
+	{
+		projName: "E-Commerce Back End",
+		description: "E-Commerce Back End",
+		projLink: "https://github.com/fremen432/e-commerce-back-end",
+		liveLink: "",
+		image: projectImage_backEnd,
+		technologies: ["Javascript"],
+	},
+	{
+		projName: "Team Profile Generator",
+		description: "Command Line Application",
+		projLink: "https://github.com/fremen432/team-profile-generator",
+		liveLink: "",
+		image: projectImage_teamProfile,
+		technologies: ["Inquirer", "Node JS"],
+	},
+	// {
+	//     projName: '',
+	//     description: '',
+	//     projLink: '',
+	//     liveLink: '',
+	//     technologies: [
+	//         '',
+	//     ]
+	// },
+];
 
 const featuredProject = {
     projName: 'Simply Pho House',
