@@ -1,8 +1,8 @@
 # React Portfolio
 
 <h1 align="center">
-    <a href="https://fremen432.github.io/20_react-portfolio/" target="_blank">
-     Live Page
+    <a href="https://claytonmiller.tech/" target="_blank">
+     Live Page - www.claytonmiller.tech
     </a>
 </h1>
 
