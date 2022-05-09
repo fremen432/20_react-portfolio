@@ -100,52 +100,41 @@ const featuredProject = {
 }
 
 const topFour = [
-    {
-        projName: 'Simply Pho House',
-        description: 'ReactJS Restaurant Website',
-        projLink: 'https://github.com/fremen432/online-restaraunt-order',
-        liveLink: 'https://adorable-tiramisu-8d772f.netlify.app/',
-        image: projectImage_simplyPho_homepage_full,
-        technologies: [
-            'React JS',
-            'Tailwind CSS',
-            'Javascript'
-        ]
-    },
-    {
-        projName: 'Burkholder Eyelashes',
-        projId: 'burkholder-eyelashes',
-        description: 'ReactJS E-commerce Website',
-        projLink: 'https://github.com/fremen432/burkholder-eyelashes-refactoring',
-        liveLink: 'https://coruscating-manatee-dee84b.netlify.app/',
-        image: projectImage_burkholderEyelashes,
-        technologies: [
-            'React JS',
-            'Tailwind CSS',
-            'Javascript'
-        ]
-    },
-    {
-        projName: 'Eazy Eatz',
-        description: 'Recipe Finder Application',
-        projLink: 'https://github.com/fremen432/eazy-eatz-refactor',
-        liveLink: 'https://shiny-custard-6f1f83.netlify.app/',
-        image: projectImage_eazyEatz,
-        technologies: 'Javascript'
-    },
-    {
-        projName: 'Armadillo Construction',
-        description: 'Professional Full-Stack Website',
-        projLink: 'https://github.com/MickeyPhillips/Project_2',
-        liveLink: 'https://glacial-reef-85694.herokuapp.com/',
-        image: projectImage_armadilloConstruction,
-        technologies: [
-            'HTML5',
-            'Tailwind CSS',
-            'Javascript'
-        ]
-    },
-]
+	{
+		projName: "Simply Pho House",
+		description: "ReactJS Restaurant Website",
+		projLink: "https://github.com/fremen432/online-restaraunt-order",
+		liveLink: "https://adorable-tiramisu-8d772f.netlify.app/",
+		image: projectImage_simplyPho_homepage_full,
+		technologies: ["React JS", "Tailwind CSS", "Javascript"],
+	},
+	{
+		projName: "Burkholder Eyelashes",
+		projId: "burkholder-eyelashes",
+		description: "ReactJS E-commerce Website",
+		projLink:
+			"https://github.com/fremen432/burkholder-eyelashes-refactoring",
+		liveLink: "https://main--burkholder-eyelashes.netlify.app/",
+		image: projectImage_burkholderEyelashes,
+		technologies: ["React JS", "Tailwind CSS", "Javascript"],
+	},
+	{
+		projName: "Eazy Eatz",
+		description: "Recipe Finder Application",
+		projLink: "https://github.com/fremen432/eazy-eatz-refactor",
+		liveLink: "https://shiny-custard-6f1f83.netlify.app/",
+		image: projectImage_eazyEatz,
+		technologies: "Javascript",
+	},
+	{
+		projName: "Armadillo Construction",
+		description: "Professional Full-Stack Website",
+		projLink: "https://github.com/MickeyPhillips/Project_2",
+		liveLink: "https://glacial-reef-85694.herokuapp.com/",
+		image: projectImage_armadilloConstruction,
+		technologies: ["HTML5", "Tailwind CSS", "Javascript"],
+	},
+];
 
 const contactLinks = [
     {

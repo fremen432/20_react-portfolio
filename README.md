@@ -1,4 +1,4 @@
-# Module 20 Challenge - React Portfolio
+# React Portfolio
 
 <h1 align="center">
     <a href="https://fremen432.github.io/20_react-portfolio/" target="_blank">
